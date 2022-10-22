@@ -111,9 +111,7 @@ export default function Home() {
   return (
     <TextContainer id="Home">
       <FlexContainer>
-        <MainText>
-          Hello,<span>I'm Tri Tran</span>
-        </MainText>
+        <MainText>Tri Tran</MainText>
         <SmallerText>Software Engineer</SmallerText>
         <IconContainer>
           <a

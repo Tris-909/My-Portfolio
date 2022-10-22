@@ -55,8 +55,7 @@ export default function Footer() {
       <FooterTextMargin>
         <CopyRight>Tri Minh Tran &copy; Copyright</CopyRight>
         <MoreInformation>
-          <div>tranminhtri9090@gmail.com</div>
-          <div>(+84) 395 002 471</div>
+          <div>tranminhtri.work@gmail.com</div>
         </MoreInformation>
       </FooterTextMargin>
     </FooterContainer>
