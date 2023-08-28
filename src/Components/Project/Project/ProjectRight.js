@@ -75,7 +75,19 @@ export default function ProjectRight({
               </ButtonContainer>
             </>
           ) : (
-            <ProjectTachStack projectName={projectName} />
+            <ProjectTachStack
+              projectSkills={[
+                "React",
+                "TypeScript",
+                "JavaScript",
+                "Zustand",
+                "Responsive Layout",
+                "ChakraUI",
+                "Firebase",
+                "CloudFireStore",
+                "Git / Github",
+              ]}
+            />
           )}
         </ProjectText>
       </ProjectCard>
