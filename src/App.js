@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import LoaderScreen from "./Components/LoaderScreen/LoaderScreen";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
-import Timeline from "./Components/Journey/Journey";
-import Projects from "./Components/ProjectSection/ProjectSection";
-import AboutmeV2 from "./Components/Aboutme/AboutmeV2";
-import Blog from "./Components/Blogs/Blogs";
-import ContactMe from "./Components/ContactMe/ContactMe";
-import Footer from "./Components/Footer/Footer";
+import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import Timeline from "./components/Journey/Journey";
+import Projects from "./components/ProjectSection/ProjectSection";
+import AboutmeV2 from "./components/Aboutme/AboutmeV2";
+import Blog from "./components/Blogs/Blogs";
+import ContactMe from "./components/ContactMe/ContactMe";
+import Footer from "./components/Footer/Footer";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

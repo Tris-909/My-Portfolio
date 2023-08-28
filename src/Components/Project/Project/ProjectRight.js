@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
-import ProjectCard from "../ProjectCard/ProjectCard";
+import ProjectCard from "components/Project/ProjectCard";
+import ProjectImage from "components/Project/ProjectImage";
+import ProjectTachStack from "components/Project/ProjectTechStack";
+
 import ProjectText from "../ProjectText/ProjectText";
-import ProjectImage from "../ProjectImage/ProjectImage";
 import ProjectExplainMobile from "../ProjectExplainMobile/ProjectExplainMobile";
 import TabBar from "./Tab-Bar";
 import ProjectName from "../Project Utilities/ProjectName";
@@ -10,11 +12,10 @@ import ProjectExplain from "../Project Utilities/ProjectExplain";
 import ProjectCredential from "../Project Utilities/ProjectCredential";
 import ProjectContainer from "../Project Utilities/ProjectContainer";
 import ButtonContainer from "../Project Utilities/ButtonContainer";
-import ProjectTachStack from "../ProjectTechStack/ProjectTechStack";
 
 import Button from "../../Button/Button";
 
-export default function ProjectRight({
+const ProjectRight = ({
   projectName,
   ProjectExplainForMobile,
   ProjectExplainOne,
@@ -24,7 +25,7 @@ export default function ProjectRight({
   ViewCodeLink,
   LiveDemoLink,
   ProjectPicture,
-}) {
+}) => {
   const [descriptionIsActive, setDescriptionIsActive] = useState(true);
 
   const toggleDescriptionActive = (value) => {
@@ -93,4 +94,6 @@ export default function ProjectRight({
       </ProjectCard>
     </ProjectContainer>
   );
-}
+};
+
+export default ProjectRight;
