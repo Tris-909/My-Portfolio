@@ -112,7 +112,7 @@ export default function Home() {
     <TextContainer id="Home">
       <FlexContainer>
         <MainText>Tri Tran</MainText>
-        <SmallerText>Software Engineer</SmallerText>
+        <SmallerText>FullStack Developer</SmallerText>
         <IconContainer>
           <a
             href="https://www.linkedin.com/in/tr%C3%AD-tr%E1%BA%A7n-6861331a4/"

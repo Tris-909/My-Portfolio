@@ -63,7 +63,6 @@ const Timeline = () => {
           dateClassName="date"
           contentArrowStyle={{ borderRight: "7px solid #fff" }}
           date="December 2019 - March 2021"
-          iconClassName="journeyIcon"
           iconClassName="OutaIcon"
           icon={<InnerIcon />}
         >
@@ -87,7 +86,6 @@ const Timeline = () => {
           contentArrowStyle={{ borderRight: "7px solid #fff" }}
           date="March 2021 - Present"
           dateClassName="date"
-          iconClassName="journeyIcon"
           iconClassName="OutaIcon"
           icon={<InnerIcon />}
         >
@@ -100,12 +98,11 @@ const Timeline = () => {
             href="https://www.sendpayments.com/"
             rel="noreferrer"
           >
-            SendFX Gold Coast
+            SendPayments Gold Coast
           </a>
           <p>
-            Working with a team of developers and UX/UI designers, Product
-            Owners to develop complicated greenfield products from websites to
-            APIs to help people transfer money around the world
+            Building websites, APIs and infastructure to help people and
+            companies transfer money around the world.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

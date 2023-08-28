@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { Link } from "react-scroll";
-import Resume from "./TRI_TRAN.pdf";
+import Resume from "./TriTran-2.5YoE-FullStack.pdf";
 
 const NavBarOptions = styled.div`
   flex-grow: 1;

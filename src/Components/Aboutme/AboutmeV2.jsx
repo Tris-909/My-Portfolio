@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 
 const AboutMeContainer = styled.div`
@@ -81,34 +80,6 @@ const ButtonContainer = styled.div`
   column-gap: 0.5rem;
 `;
 
-const SkillHeader = styled.div`
-  width: fit-content;
-  font-size: 40px;
-  font-weight: 700;
-  border-bottom: 3px double black;
-`;
-
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-
-  @media (max-width: 970px) {
-    flex-direction: column;
-  }
-`;
-
-const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-
-  font-size: 25px;
-  margin-top: 10px;
-`;
-
 const AboutMeTab = () => {
   return (
     <AboutMeSection>
@@ -133,86 +104,16 @@ const AboutMeTab = () => {
   );
 };
 
-const MySkillTab = () => {
-  return (
-    <MySkillSection>
-      <SkillHeader> Front-End : </SkillHeader>
-      <Row>
-        <Column>HTML5</Column>
-        <Column>CSS3, SCSS, CSS libraries</Column>
-        <Column>Responsive Layout</Column>
-      </Row>
-      <Row>
-        <Column>JavaScript ( ES6+ )</Column>
-        <Column>TypeScript</Column>
-        <Column>Python</Column>
-      </Row>
-      <Row>
-        <Column>React</Column>
-        <Column>REST API</Column>
-        <Column></Column>
-      </Row>
-      <SkillHeader> Back-End : </SkillHeader>
-      <Row>
-        <Column>NodeJS Express</Column>
-        <Column>GraphQL</Column>
-        <Column>NoSQL : DynamoDB / MongoDB</Column>
-      </Row>
-      <Row>
-        <Column>
-          Working experience with Amazon Web Services : IAM, Cognito, DynamoDB,
-          Amplify, Appsync, CloudFront, CloudFormation, Route53, ...
-        </Column>
-      </Row>
-      <Row>
-        <Column>
-          Working experience with Serverless Stack : Lambda, CloudWatch,
-          Cognito, API Gateway, ...
-        </Column>
-      </Row>
-      <SkillHeader> Others : </SkillHeader>
-      <Row>
-        <Column> Git Work Flow </Column>
-        <Column> Gitlab CI-CD </Column>
-      </Row>
-      <Row>
-        <Column> Agile & Scrum </Column>
-      </Row>
-    </MySkillSection>
-  );
-};
-
 const AboutMeV2 = () => {
-  const [content, setContent] = useState("aboutMe");
-
-  const onSwitchTabHandler = (tabName) => {
-    setContent(tabName);
-  };
-
   return (
     <Fade left>
       <AboutMeContainer id="Aboutme">
         <ButtonContainer>
-          <AboutMeButton
-            left="0%"
-            onClick={() => onSwitchTabHandler("aboutMe")}
-          >
-            {" "}
-            <ButtonActive content={content === "aboutMe"}>
-              About Me
-            </ButtonActive>{" "}
-          </AboutMeButton>
-          <AboutMeButton
-            left="-20%"
-            onClick={() => onSwitchTabHandler("mySkill")}
-          >
-            {" "}
-            <ButtonActive content={content === "mySkill"}>
-              My Skill
-            </ButtonActive>{" "}
+          <AboutMeButton left="0%">
+            <ButtonActive>About Me</ButtonActive>
           </AboutMeButton>
         </ButtonContainer>
-        {content === "aboutMe" ? <AboutMeTab /> : <MySkillTab />}
+        <AboutMeTab />
       </AboutMeContainer>
     </Fade>
   );
