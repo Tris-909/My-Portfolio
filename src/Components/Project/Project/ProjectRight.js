@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import ProjectCard from "components/Project/ProjectCard";
 import ProjectImage from "components/Project/ProjectImage";
 import ProjectTachStack from "components/Project/ProjectTechStack";
@@ -7,17 +6,17 @@ import ProjectDescription from "components/Project/ProjectDescription";
 import ProjectExplain from "components/Project/ProjectExplain";
 import ProjectName from "components/Project/Project Utilities/ProjectName";
 import ProjectCredential from "components/Project/Project Utilities/ProjectCredential";
+import ProjectContainer from "components/Project/Project Utilities/ProjectContainer";
+import ButtonContainer from "components/Project/Project Utilities/ButtonContainer";
 
 import TabBar from "./Tab-Bar";
-import ProjectContainer from "../Project Utilities/ProjectContainer";
-import ButtonContainer from "../Project Utilities/ButtonContainer";
 
 import Button from "../../Button/Button";
 
 const ProjectRight = ({
   name,
-  descriptions,
   credentials,
+  descriptions,
   ViewCodeLink,
   LiveDemoLink,
   ProjectPicture,
