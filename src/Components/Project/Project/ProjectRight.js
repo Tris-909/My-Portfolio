@@ -8,8 +8,7 @@ import ProjectName from "components/Project/Project Utilities/ProjectName";
 import ProjectCredential from "components/Project/Project Utilities/ProjectCredential";
 import ProjectContainer from "components/Project/Project Utilities/ProjectContainer";
 import ButtonContainer from "components/Project/Project Utilities/ButtonContainer";
-
-import TabBar from "./Tab-Bar";
+import TabBar from "components/Project/Project/TabBar";
 
 import Button from "../../Button/Button";
 
@@ -46,7 +45,7 @@ const ProjectRight = ({
         <ProjectDescription margin="7%">
           {name === "Saving App" ? (
             <TabBar
-              descriptionActiveProshop={descriptionIsActive}
+              descriptionActive={descriptionIsActive}
               toggleActiveDescription={(value) =>
                 toggleDescriptionActive(value)
               }

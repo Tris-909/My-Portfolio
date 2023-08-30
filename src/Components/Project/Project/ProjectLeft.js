@@ -11,7 +11,7 @@ import ProjectName from "../Project Utilities/ProjectName";
 import ProjectCredential from "../Project Utilities/ProjectCredential";
 import ProjectContainer from "../Project Utilities/ProjectContainer";
 import ButtonContainer from "../Project Utilities/ButtonContainer";
-import TabBar from "./Tab-Bar";
+import TabBar from "./TabBar";
 import Button from "../../Button/Button";
 
 export default function ProjectLeft({
