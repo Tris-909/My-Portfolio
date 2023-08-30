@@ -6,9 +6,9 @@ import ProjectTachStack from "components/Project/ProjectTechStack";
 import ProjectDescription from "components/Project/ProjectDescription";
 import ProjectExplain from "components/Project/ProjectExplain";
 import ProjectName from "components/Project/Project Utilities/ProjectName";
+import ProjectCredential from "components/Project/Project Utilities/ProjectCredential";
 
 import TabBar from "./Tab-Bar";
-import ProjectCredential from "../Project Utilities/ProjectCredential";
 import ProjectContainer from "../Project Utilities/ProjectContainer";
 import ButtonContainer from "../Project Utilities/ButtonContainer";
 
@@ -17,8 +17,7 @@ import Button from "../../Button/Button";
 const ProjectRight = ({
   name,
   descriptions,
-  ProjectCredentials,
-  ProjectAdminCredential,
+  credentials,
   ViewCodeLink,
   LiveDemoLink,
   ProjectPicture,
@@ -60,11 +59,7 @@ const ProjectRight = ({
               {descriptions.map((description) => (
                 <ProjectExplain text={description} />
               ))}
-              <ProjectCredential
-                projectName={name}
-                ProjectCredentials={ProjectCredentials}
-                ProjectAdminCredential={ProjectAdminCredential}
-              />
+              <ProjectCredential credentials={credentials} />
               <ButtonContainer>
                 <Button link={ViewCodeLink} content="View Code" />
                 <Button link={LiveDemoLink} content="Live Demo" />

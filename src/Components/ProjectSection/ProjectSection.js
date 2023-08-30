@@ -68,7 +68,7 @@ export default function Projects() {
             "A visual way to track your saving goal built by React and Firebase along with many features like drag-n-drop notes, descriptive step with emoji and milestones as sub-goals.",
             "I have always been passionate about building personal software for myself that I can use from date to date so I built this fullStack application. Please click ViewCode to read more.",
           ]}
-          ProjectAdminCredential="lrd30780@xcoxc.com - testtest"
+          credentials="lrd30780@xcoxc.com - testtest"
           isShow={true}
           ViewCodeLink="https://github.com/Tris-909/HabitTracker"
           LiveDemoLink="https://cute-seahorse-5d3a81.netlify.app/"
