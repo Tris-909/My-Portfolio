@@ -54,8 +54,8 @@ const ProjectRight = ({
           {descriptionIsActive ? (
             <>
               <ProjectName name={name} />
-              {descriptions.map((description) => (
-                <ProjectExplain text={description} />
+              {descriptions.map((description, index) => (
+                <ProjectExplain text={description} key={index} />
               ))}
               <ProjectCredential credentials={credentials} />
               <ButtonContainer>

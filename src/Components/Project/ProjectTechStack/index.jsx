@@ -18,7 +18,9 @@ const ProjectTechStack = ({ projectSkills }) => {
         minHeight={isLargerThan600 ? "150px" : "250px"}
       >
         {projectSkills.map((skill) => (
-          <Box fontSize="1.5rem">{skill}</Box>
+          <Box fontSize="1.5rem" key={skill}>
+            {skill}
+          </Box>
         ))}
       </SimpleGrid>
     </Box>

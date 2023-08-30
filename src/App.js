@@ -5,7 +5,7 @@ import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Timeline from "./components/Journey/Journey";
-import Projects from "./components/ProjectSection/ProjectSection";
+import Projects from "./components/Project/ProjectSection";
 import AboutmeV2 from "./components/Aboutme/AboutmeV2";
 import Blog from "./components/Blogs/Blogs";
 import ContactMe from "./components/ContactMe/ContactMe";
