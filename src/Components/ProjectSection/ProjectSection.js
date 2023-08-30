@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import ProjectLeft from "../Project/Project/ProjectLeft";
 import ProjectRight from "../Project/Project/ProjectRight";
-import Seemore from "../Button/Seemore";
+import Seemore from "../Project/ProjectButton/Seemore";
 
 import SavingApp1 from "./SavingApp/pic1.png";
 import SavingApp2 from "./SavingApp/pic2.png";

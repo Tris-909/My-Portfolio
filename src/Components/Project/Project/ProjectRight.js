@@ -9,8 +9,7 @@ import ProjectCredential from "components/Project/Project Utilities/ProjectCrede
 import ProjectContainer from "components/Project/Project Utilities/ProjectContainer";
 import ButtonContainer from "components/Project/Project Utilities/ButtonContainer";
 import TabBar from "components/Project/Project/TabBar";
-
-import Button from "../../Button/Button";
+import ProjectButton from "components/Project/ProjectButton";
 
 const ProjectRight = ({
   name,
@@ -59,8 +58,8 @@ const ProjectRight = ({
               ))}
               <ProjectCredential credentials={credentials} />
               <ButtonContainer>
-                <Button link={ViewCodeLink} content="View Code" />
-                <Button link={LiveDemoLink} content="Live Demo" />
+                <ProjectButton link={ViewCodeLink} content="View Code" />
+                <ProjectButton link={LiveDemoLink} content="Live Demo" />
               </ButtonContainer>
             </>
           ) : (

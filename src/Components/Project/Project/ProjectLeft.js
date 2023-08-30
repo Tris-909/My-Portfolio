@@ -12,7 +12,7 @@ import ProjectCredential from "../Project Utilities/ProjectCredential";
 import ProjectContainer from "../Project Utilities/ProjectContainer";
 import ButtonContainer from "../Project Utilities/ButtonContainer";
 import TabBar from "./TabBar";
-import Button from "../../Button/Button";
+import ProjectButton from "components/Project/ProjectButton";
 
 export default function ProjectLeft({
   name,
@@ -67,8 +67,8 @@ export default function ProjectLeft({
                 ProjectAdminCredential={ProjectAdminCredential}
               />
               <ButtonContainer>
-                <Button link={ViewCodeLink} content="View Code" />
-                <Button link={LiveDemoLink} content="Live Demo" />
+                <ProjectButton link={ViewCodeLink} content="View Code" />
+                <ProjectButton link={LiveDemoLink} content="Live Demo" />
               </ButtonContainer>
             </>
           ) : (
