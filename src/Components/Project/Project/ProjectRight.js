@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import ProjectCard from "components/Project/ProjectCard";
 import ProjectImage from "components/Project/ProjectImage";
 import ProjectTachStack from "components/Project/ProjectTechStack";
+import ProjectDescription from "components/Project/ProjectDescription";
 
-import ProjectText from "../ProjectText/ProjectText";
 import ProjectExplainMobile from "../ProjectExplainMobile/ProjectExplainMobile";
 import TabBar from "./Tab-Bar";
 import ProjectName from "../Project Utilities/ProjectName";
@@ -48,7 +48,7 @@ const ProjectRight = ({
           top="10%"
           left="70%"
         />
-        <ProjectText margin="7%">
+        <ProjectDescription margin="7%">
           {projectName === "Saving App" ? (
             <TabBar
               descriptionActiveProshop={descriptionIsActive}
@@ -90,7 +90,7 @@ const ProjectRight = ({
               ]}
             />
           )}
-        </ProjectText>
+        </ProjectDescription>
       </ProjectCard>
     </ProjectContainer>
   );

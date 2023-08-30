@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import ProjectCard from "components/Project/ProjectCard";
-import ProjectText from "../ProjectText/ProjectText";
+import ProjectDescription from "../ProjectDescription";
 import ProjectImage from "../ProjectImage";
 import ProjectExplainMobile from "../ProjectExplainMobile/ProjectExplainMobile";
 import ProjectTachStack from "../ProjectTechStack";
@@ -47,7 +47,7 @@ export default function ProjectLeft({
           top="15%"
           left="-50%"
         />
-        <ProjectText margin="7% 7% 7% 35%">
+        <ProjectDescription margin="7% 7% 7% 35%">
           <TabBar
             descriptionActiveProshop={descriptionActiveProshop}
             toggleActiveDescription={(val) => toggleActiveDescription(val)}
@@ -73,7 +73,7 @@ export default function ProjectLeft({
           ) : (
             <ProjectTachStack projectName={projectName} />
           )}
-        </ProjectText>
+        </ProjectDescription>
       </ProjectCard>
     </ProjectContainer>
   );
