@@ -8,16 +8,17 @@ import ProjectName from "components/Project/Project Utilities/ProjectName";
 import ProjectCredential from "components/Project/Project Utilities/ProjectCredential";
 import ProjectContainer from "components/Project/Project Utilities/ProjectContainer";
 import ButtonContainer from "components/Project/Project Utilities/ButtonContainer";
-import TabBar from "components/Project/Project/TabBar";
+import TabBar from "components/Project/TabBar";
 import ProjectButton from "components/Project/ProjectButton";
 
 const ProjectRight = ({
   name,
   credentials,
   descriptions,
-  ViewCodeLink,
-  LiveDemoLink,
-  ProjectPicture,
+  viewCodeLink,
+  liveDemoLink,
+  projectPictures,
+  projectSkills,
 }) => {
   const [descriptionIsActive, setDescriptionIsActive] = useState(true);
 
@@ -35,7 +36,7 @@ const ProjectRight = ({
     <ProjectContainer>
       <ProjectCard top="0" left="0">
         <ProjectImage
-          imageArray={ProjectPicture}
+          imageArray={projectPictures}
           width="80%"
           height="70%"
           top="10%"
@@ -58,24 +59,12 @@ const ProjectRight = ({
               ))}
               <ProjectCredential credentials={credentials} />
               <ButtonContainer>
-                <ProjectButton link={ViewCodeLink} content="View Code" />
-                <ProjectButton link={LiveDemoLink} content="Live Demo" />
+                <ProjectButton link={viewCodeLink} content="View Code" />
+                <ProjectButton link={liveDemoLink} content="Live Demo" />
               </ButtonContainer>
             </>
           ) : (
-            <ProjectTachStack
-              projectSkills={[
-                "React",
-                "TypeScript",
-                "JavaScript",
-                "Zustand",
-                "Responsive Layout",
-                "ChakraUI",
-                "Firebase",
-                "CloudFireStore",
-                "Git / Github",
-              ]}
-            />
+            <ProjectTachStack projectSkills={projectSkills} />
           )}
         </ProjectDescription>
       </ProjectCard>

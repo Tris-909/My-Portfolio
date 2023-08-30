@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import ProjectLeft from "../Project/Project/ProjectLeft";
-import ProjectRight from "../Project/Project/ProjectRight";
+import ProjectLeft from "components/Project/ProjectLeft";
+import ProjectRight from "components/Project/ProjectRight";
 import Seemore from "../Project/ProjectButton/Seemore";
 
 import SavingApp1 from "./SavingApp/pic1.png";
@@ -70,14 +70,25 @@ export default function Projects() {
           ]}
           credentials="lrd30780@xcoxc.com - testtest"
           isShow={true}
-          ViewCodeLink="https://github.com/Tris-909/HabitTracker"
-          LiveDemoLink="https://cute-seahorse-5d3a81.netlify.app/"
-          ProjectPicture={[
+          viewCodeLink="https://github.com/Tris-909/HabitTracker"
+          liveDemoLink="https://cute-seahorse-5d3a81.netlify.app/"
+          projectPictures={[
             SavingApp1,
             SavingApp2,
             SavingApp3,
             SavingApp4,
             SavingApp5,
+          ]}
+          projectSkills={[
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Zustand",
+            "Responsive Layout",
+            "ChakraUI",
+            "Firebase",
+            "CloudFireStore",
+            "Git / Github",
           ]}
         />
       </FadeAnimation>
@@ -98,16 +109,17 @@ export default function Projects() {
 
       {/* <FadeAnimation>
         <ProjectLeft
-          projectName="E-Commerce Proshop"
-          ProjectExplainForMobile="FullStack E-Commerce Websites built using React and NodeJS, MongoDB. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites."
-          ProjectExplainOne="Many businesses need an online store to sell their products so I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites to build real-world features and improve my skills as a developer."
-          ProjectExplainTwo="The Site is a combination between a content management system (admin page) and an e-commerce websites. Admin can perform CRUD operations through interfaces (Content Management System)."
-          ProjectCredentials="sb-uj3sb3898726@personal.example.com - ZRy:}9n+"
-          ProjectAdminCredential="admin@email.com - 123"
+          name="E-Commerce Proshop"
+          descriptions={[
+            "FullStack E-Commerce Websites built using React and NodeJS, MongoDB. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites.",
+            "Many businesses need an online store to sell their products so I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites to build real-world features and improve my skills as a developer.",
+            "The Site is a combination between a content management system (admin page) and an e-commerce websites. Admin can perform CRUD operations through interfaces (Content Management System).",
+          ]}
+          credentials="admin@email.com - 123"
           isShow={true}
-          ViewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy"
-          LiveDemoLink="https://proshop-tris.herokuapp.com/"
-          ProjectPicture={[
+          viewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy"
+          liveDemoLink="https://proshop-tris.herokuapp.com/"
+          projectPictures={[
             ProShop1,
             ProShop2,
             ProShop3,
@@ -115,6 +127,16 @@ export default function Projects() {
             ProShop5,
             ProShop6,
             ProShop7,
+          ]}
+          projectSkills={[
+            "React",
+            "JavaScript",
+            "MaterialUI",
+            "Redux",
+            "Responsive Layout",
+            "MongoDB",
+            "RESTful API",
+            "Git",
           ]}
         />
       </FadeAnimation> */}
