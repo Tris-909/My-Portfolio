@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-
 import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
@@ -10,27 +8,13 @@ import AboutmeV2 from "./components/Aboutme/AboutmeV2";
 import Blog from "./components/Blogs/Blogs";
 import ContactMe from "./components/ContactMe/ContactMe";
 import Footer from "./components/Footer/Footer";
-
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const Background = styled.div`
-  background-color: #141414;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-top: -2em;
-  font-family: "Open Sans Condensed", sans-serif;
-  position: relative;
-  z-index: 1;
-
-  @media (max-width: 870px) {
-    margin-top: 0px;
-  }
-`;
+import { Box, useMediaQuery } from "@chakra-ui/react";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [isLargerThan870] = useMediaQuery("(max-width: 870px)");
 
   useEffect(() => {
     setTimeout(() => {
@@ -43,7 +27,15 @@ function App() {
       {loading ? (
         <LoaderScreen />
       ) : (
-        <Background>
+        <Box
+          backgroundColor="#141414"
+          backgroundAttachment={"fixed"}
+          backgroundSize={"cover"}
+          marginTop={isLargerThan870 ? 0 : "-2em"}
+          fontFamily={"Open Sans Condensed"}
+          position={"relative"}
+          zIndex="1"
+        >
           <Navbar />
           <Home />
           <Timeline />
@@ -52,7 +44,7 @@ function App() {
           <Blog />
           <Footer />
           <ToastContainer />
-        </Background>
+        </Box>
       )}
     </>
   );
