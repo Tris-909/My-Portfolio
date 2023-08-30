@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
 import ProjectCard from "components/Project/ProjectCard";
+import ProjectExplain from "components/Project/ProjectExplain";
+
 import ProjectDescription from "../ProjectDescription";
 import ProjectImage from "../ProjectImage";
-import ProjectExplainMobile from "../ProjectExplainMobile/ProjectExplainMobile";
+import ProjectExplainMobile from "../ProjectExplain";
 import ProjectTachStack from "../ProjectTechStack";
 import ProjectName from "../Project Utilities/ProjectName";
-import ProjectExplain from "../Project Utilities/ProjectExplain";
 import ProjectCredential from "../Project Utilities/ProjectCredential";
 import ProjectContainer from "../Project Utilities/ProjectContainer";
 import ButtonContainer from "../Project Utilities/ButtonContainer";

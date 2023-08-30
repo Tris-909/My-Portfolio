@@ -4,11 +4,10 @@ import ProjectCard from "components/Project/ProjectCard";
 import ProjectImage from "components/Project/ProjectImage";
 import ProjectTachStack from "components/Project/ProjectTechStack";
 import ProjectDescription from "components/Project/ProjectDescription";
+import ProjectExplain from "components/Project/ProjectExplain";
 
-import ProjectExplainMobile from "../ProjectExplainMobile/ProjectExplainMobile";
 import TabBar from "./Tab-Bar";
 import ProjectName from "../Project Utilities/ProjectName";
-import ProjectExplain from "../Project Utilities/ProjectExplain";
 import ProjectCredential from "../Project Utilities/ProjectCredential";
 import ProjectContainer from "../Project Utilities/ProjectContainer";
 import ButtonContainer from "../Project Utilities/ButtonContainer";
@@ -17,9 +16,7 @@ import Button from "../../Button/Button";
 
 const ProjectRight = ({
   projectName,
-  ProjectExplainForMobile,
-  ProjectExplainOne,
-  ProjectExplainTwo,
+  descriptions,
   ProjectCredentials,
   ProjectAdminCredential,
   ViewCodeLink,
@@ -60,11 +57,9 @@ const ProjectRight = ({
           {descriptionIsActive ? (
             <>
               <ProjectName>{projectName}</ProjectName>
-              <ProjectExplainMobile>
-                {ProjectExplainForMobile}
-              </ProjectExplainMobile>
-              <ProjectExplain>{ProjectExplainOne}</ProjectExplain>
-              <ProjectExplain>{ProjectExplainTwo}</ProjectExplain>
+              {descriptions.map((description) => (
+                <ProjectExplain text={description} />
+              ))}
               <ProjectCredential
                 projectName={projectName}
                 ProjectCredentials={ProjectCredentials}
