@@ -5,9 +5,9 @@ import ProjectImage from "components/Project/ProjectImage";
 import ProjectTachStack from "components/Project/ProjectTechStack";
 import ProjectDescription from "components/Project/ProjectDescription";
 import ProjectExplain from "components/Project/ProjectExplain";
+import ProjectName from "components/Project/Project Utilities/ProjectName";
 
 import TabBar from "./Tab-Bar";
-import ProjectName from "../Project Utilities/ProjectName";
 import ProjectCredential from "../Project Utilities/ProjectCredential";
 import ProjectContainer from "../Project Utilities/ProjectContainer";
 import ButtonContainer from "../Project Utilities/ButtonContainer";
@@ -15,7 +15,7 @@ import ButtonContainer from "../Project Utilities/ButtonContainer";
 import Button from "../../Button/Button";
 
 const ProjectRight = ({
-  projectName,
+  name,
   descriptions,
   ProjectCredentials,
   ProjectAdminCredential,
@@ -46,7 +46,7 @@ const ProjectRight = ({
           left="70%"
         />
         <ProjectDescription margin="7%">
-          {projectName === "Saving App" ? (
+          {name === "Saving App" ? (
             <TabBar
               descriptionActiveProshop={descriptionIsActive}
               toggleActiveDescription={(value) =>
@@ -56,12 +56,12 @@ const ProjectRight = ({
           ) : null}
           {descriptionIsActive ? (
             <>
-              <ProjectName>{projectName}</ProjectName>
+              <ProjectName name={name} />
               {descriptions.map((description) => (
                 <ProjectExplain text={description} />
               ))}
               <ProjectCredential
-                projectName={projectName}
+                projectName={name}
                 ProjectCredentials={ProjectCredentials}
                 ProjectAdminCredential={ProjectAdminCredential}
               />

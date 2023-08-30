@@ -15,7 +15,7 @@ import TabBar from "./Tab-Bar";
 import Button from "../../Button/Button";
 
 export default function ProjectLeft({
-  projectName,
+  name,
   ProjectExplainForMobile,
   ProjectExplainOne,
   ProjectExplainTwo,
@@ -55,14 +55,14 @@ export default function ProjectLeft({
           />
           {descriptionActiveProshop ? (
             <>
-              <ProjectName>{projectName}</ProjectName>
+              <ProjectName>{name}</ProjectName>
               <ProjectExplainMobile>
                 {ProjectExplainForMobile}
               </ProjectExplainMobile>
               <ProjectExplain>{ProjectExplainOne}</ProjectExplain>
               <ProjectExplain>{ProjectExplainTwo}</ProjectExplain>
               <ProjectCredential
-                projectName={projectName}
+                projectName={name}
                 ProjectCredentials={ProjectCredentials}
                 ProjectAdminCredential={ProjectAdminCredential}
               />
@@ -72,7 +72,7 @@ export default function ProjectLeft({
               </ButtonContainer>
             </>
           ) : (
-            <ProjectTachStack projectName={projectName} />
+            <ProjectTachStack projectName={name} />
           )}
         </ProjectDescription>
       </ProjectCard>

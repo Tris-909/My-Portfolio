@@ -20,7 +20,7 @@ import ProShop5 from "./ProShop Image/ProShop5-min.PNG";
 import ProShop6 from "./ProShop Image/ProShop6-min.PNG";
 import ProShop7 from "./ProShop Image/ProShop7-min.PNG";
 
-import FadeAnimation from "../Project/ProjectAnimation/FadeBottom";
+import { FadeAnimation } from "components/Project/ProjectAnimation";
 
 const Container = styled.div`
   background-color: #141414;
@@ -63,7 +63,7 @@ export default function Projects() {
 
       <FadeAnimation>
         <ProjectRight
-          projectName="Saving App"
+          name="Saving App"
           descriptions={[
             "A visual way to track your saving goal built by React and Firebase along with many features like drag-n-drop notes, descriptive step with emoji and milestones as sub-goals.",
             "I have always been passionate about building personal software for myself that I can use from date to date so I built this fullStack application. Please click ViewCode to read more.",
