@@ -1,0 +1,16 @@
+.swiper-button-prev {
+  --swiper-navigation-size: 30px;
+  background-color: transparent;
+  color: black;
+}
+
+.swiper-button-next {
+  --swiper-navigation-size: 30px;
+
+  background-color: transparent;
+  color: black;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}

@@ -8,7 +8,7 @@ const ProjectContainer = ({ children }) => {
       fontFamily="Nunito Sans"
       flexDirection="column"
       position="relative"
-      margin="0% 10% 5% 10%"
+      margin="0% 10% 0% 10%"
       sx={{
         "@media (min-width: 3000px)": {
           margin: "0% 30% 5% 30%",
@@ -28,7 +28,6 @@ const ProjectContainer = ({ children }) => {
           justifyContent: "center",
           alignItems: "center",
           margin: "0% 0% 5% 0%",
-          height: "initial",
         },
       }}
     >

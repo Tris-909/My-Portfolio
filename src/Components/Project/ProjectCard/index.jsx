@@ -9,14 +9,14 @@ const ProjectCard = (props) => {
       backgroundColor="#30302e"
       top={isLargerThan1400 ? "0%" : props.top}
       left={isLargerThan1400 ? "0%" : props.left}
-      display={isLargerThan1400 ? "flex" : "block"}
-      flexDirection={isLargerThan1400 ? "column" : "row"}
+      display={"flex"}
+      flexDirection={"column"}
       justifyContent={isLargerThan1400 ? "center" : "flex-start"}
-      alignItems={isLargerThan1400 ? "center" : "flex-start"}
-      width={isLargerThan1400 ? "85%" : "65%"}
+      alignItems={isLargerThan1400 ? "center" : "stretch"}
       position="relative"
-      height="100%"
       borderRadius="15px"
+      height={"100%"}
+      width={isLargerThan1400 ? "85%" : "65%"}
     >
       {props.children}
     </Box>
