@@ -1,10 +1,11 @@
 import React from "react";
 import ProjectRight from "components/Project/ProjectRight";
-import { FadeAnimation } from "components/Project/ProjectAnimation";
 import APP_DATA from "components/Project/Data";
-import { Box } from "@chakra-ui/react";
+import { Box, useMediaQuery } from "@chakra-ui/react";
 
 const Projects = () => {
+  const [isLargerThan550] = useMediaQuery("(max-width: 550px)");
+
   return (
     <Box
       backgroundColor="#141414"
@@ -23,13 +24,22 @@ const Projects = () => {
         marginTop="2rem"
         marginBottom="55px"
         textAlign={"center"}
+        sx={{
+          "@media (max-width: 900px)": {
+            marginBottom: "15px",
+          },
+        }}
       >
         My Projects
       </Box>
 
       <ProjectRight
         name={APP_DATA.SAVING_APP.name}
-        descriptions={APP_DATA.SAVING_APP.descriptions}
+        descriptions={
+          isLargerThan550
+            ? [APP_DATA.SAVING_APP.descriptions[0]]
+            : APP_DATA.SAVING_APP.descriptions
+        }
         credentials={APP_DATA.SAVING_APP.credentials}
         viewCodeLink={APP_DATA.SAVING_APP.codeLink}
         liveDemoLink={APP_DATA.SAVING_APP.liveDemoLink}
