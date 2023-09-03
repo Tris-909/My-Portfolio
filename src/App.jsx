@@ -4,11 +4,11 @@ import Home from "./components/Home";
 import Timeline from "./components/Journey";
 import Projects from "./components/Project/ProjectSection";
 import Aboutme from "./components/Aboutme";
+import Blog from "./components/Blogs";
 
 // Waiting to turn into chakraUI
 import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 import Navbar from "./components/Navbar/Navbar";
-import Blog from "./components/Blogs/Blogs";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
