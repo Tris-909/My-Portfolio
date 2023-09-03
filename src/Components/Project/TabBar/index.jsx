@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, SimpleGrid } from "@chakra-ui/react";
 
-const Tab = ({ children, onClick }) => {
+const Tab = ({ children, triggerActive }) => {
   return (
     <Box
       color="white"
@@ -12,7 +12,7 @@ const Tab = ({ children, onClick }) => {
       textAlign={"center"}
       fontSize="1.7rem"
       fontWeight={700}
-      onClick={onClick}
+      onClick={triggerActive}
       sx={{
         "@media (max-width: 1175px)": {
           display: "none",
@@ -42,13 +42,13 @@ const TabBar = ({ toggleActiveDescription, descriptionActive }) => {
       <SimpleGrid width="100%" columns={2}>
         <Tab
           category="description"
-          onClick={() => toggleActiveDescription("description")}
+          triggerActive={() => toggleActiveDescription("description")}
         >
           <BorderBottom isActive={descriptionActive}>Description</BorderBottom>
         </Tab>
         <Tab
           category="tech-stacks"
-          onClick={() => toggleActiveDescription("tech-stacks")}
+          triggerActive={() => toggleActiveDescription("tech-stacks")}
         >
           <BorderBottom isActive={!descriptionActive}>Tech-Stacks</BorderBottom>
         </Tab>

@@ -1,20 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import { createRoot } from "react-dom/client";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
 import { ChakraProvider } from "@chakra-ui/react";
+import "./index.css";
 
-ReactDOM.render(
-  <React.Fragment>
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
-  </React.Fragment>,
-  document.getElementById("root")
+const domNode = document.getElementById("root");
+const root = createRoot(domNode);
+root.render(
+  <ChakraProvider>
+    <App />
+  </ChakraProvider>
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

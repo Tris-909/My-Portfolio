@@ -46,9 +46,7 @@ const ProjectRight = ({
           {name === "Saving App" ? (
             <TabBar
               descriptionActive={descriptionIsActive}
-              toggleActiveDescription={(value) =>
-                toggleDescriptionActive(value)
-              }
+              toggleActiveDescription={toggleDescriptionActive}
             />
           ) : null}
           {descriptionIsActive ? (
