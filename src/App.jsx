@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { Box, useMediaQuery } from "@chakra-ui/react";
+import Home from "./components/Home";
+import Timeline from "./components/Journey";
+import Projects from "./components/Project/ProjectSection";
+
+// Waiting to turn into chakraUI
 import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home";
-import Timeline from "./components/Journey/Journey";
-import Projects from "./components/Project/ProjectSection";
 import AboutmeV2 from "./components/Aboutme/AboutmeV2";
 import Blog from "./components/Blogs/Blogs";
 import Footer from "./components/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Box, useMediaQuery } from "@chakra-ui/react";
 
-function App() {
+const App = () => {
   const [loading, setLoading] = useState(true);
   const [isLargerThan870] = useMediaQuery("(max-width: 870px)");
 
@@ -48,6 +50,6 @@ function App() {
       )}
     </>
   );
-}
+};
 
 export default App;

@@ -1,34 +1,13 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import { Text } from "@chakra-ui/react";
+import InnerIcon from "./InnerIcon";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { getWindowDimensions } from "utils";
 import "react-vertical-timeline-component/style.min.css";
 import "./Journey.css";
-
-const InnerIcon = styled.div`
-  width: 20px;
-  height: 20px;
-  border: 2px solid black;
-  background-color: black;
-  position: absolute;
-  bottom: 10%;
-  right: 9%;
-  border-radius: 30px;
-`;
-
-const Title = styled.div`
-  color: white;
-  text-align: center;
-  font-size: 4.25rem;
-  font-family: "Nunito Sans", sans-serif;
-`;
-
-function getWindowDimensions() {
-  const { innerWidth: width } = window;
-  return width;
-}
 
 const Timeline = () => {
   const [currentScreenWidth, setCurrentScreenWidth] = useState(
@@ -46,7 +25,15 @@ const Timeline = () => {
 
   return (
     <>
-      <Title id="Journey">My Journey</Title>
+      <Text
+        id="Journey"
+        color="white"
+        textAlign={"center"}
+        fontSize="4.25rem"
+        fontFamily={"Nunito Sans"}
+      >
+        My Journey
+      </Text>
 
       <VerticalTimeline
         className="root"

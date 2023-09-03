@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from "react";
-import LinkButton from "./LinkButton";
-import Fade from "react-reveal/Fade";
 import { Box, Text } from "@chakra-ui/react";
+import LinkButton from "./LinkButton";
+import { getWindowDimensions } from "utils";
+import Fade from "react-reveal/Fade";
 import "./backGroundEffect.css";
-
-const getWindowDimensions = () => {
-  const { innerWidth: width } = window;
-  return width;
-};
 
 const Home = () => {
   const [currentScreenWidth, setCurrentScreenWidth] = useState(
