@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
+import Home from "./components/Home";
 import Timeline from "./components/Journey/Journey";
 import Projects from "./components/Project/ProjectSection";
 import AboutmeV2 from "./components/Aboutme/AboutmeV2";
