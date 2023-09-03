@@ -5,9 +5,9 @@ import Timeline from "./components/Journey";
 import Projects from "./components/Project/ProjectSection";
 import Aboutme from "./components/Aboutme";
 import Blog from "./components/Blogs";
+import LoaderScreen from "./components/LoaderScreen";
 
 // Waiting to turn into chakraUI
-import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
