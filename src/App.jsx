@@ -3,15 +3,13 @@ import { Box, useMediaQuery } from "@chakra-ui/react";
 import Home from "./components/Home";
 import Timeline from "./components/Journey";
 import Projects from "./components/Project/ProjectSection";
-import AboutmeV2 from "./components/Aboutme";
+import Aboutme from "./components/Aboutme";
 
 // Waiting to turn into chakraUI
 import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 import Navbar from "./components/Navbar/Navbar";
 import Blog from "./components/Blogs/Blogs";
 import Footer from "./components/Footer/Footer";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -42,10 +40,9 @@ const App = () => {
           <Home />
           <Timeline />
           <Projects />
-          <AboutmeV2 />
+          <Aboutme />
           <Blog />
           <Footer />
-          <ToastContainer />
         </Box>
       )}
     </>
