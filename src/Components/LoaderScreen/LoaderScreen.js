@@ -1,26 +1,26 @@
-import React from 'react';
-import styled from 'styled-components';
-import {ReactComponent as LoadingScreen} from './Eclipse-0.6s-201px.svg';
+import React from "react";
+import styled from "styled-components";
+import { ReactComponent as LoadingScreen } from "assets/Home_Loader/Eclipse-0.6s-201px.svg";
 
 const LoaderContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 5;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-color: black;
+  background-color: black;
 `;
 
 const LoaderScreen = () => {
-    return(
-        <LoaderContainer>
-            <LoadingScreen />
-        </LoaderContainer>
-    )
-}
+  return (
+    <LoaderContainer>
+      <LoadingScreen />
+    </LoaderContainer>
+  );
+};
 
 export default LoaderScreen;
