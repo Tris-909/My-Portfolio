@@ -17,6 +17,7 @@ const Projects = () => {
       height={"100%"}
     >
       <Box
+        className="Projects"
         color="white"
         borderRadius="10px"
         fontSize={"4.25em"}

@@ -9,7 +9,7 @@ import Blog from "./components/Blogs";
 import Footer from "./components/Footer";
 
 // Waiting to turn into chakraUI
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -34,7 +34,6 @@ const App = () => {
           fontFamily={"Open Sans Condensed"}
           position={"relative"}
           zIndex="1"
-          overflow="auto"
         >
           <Navbar />
           <Home />
