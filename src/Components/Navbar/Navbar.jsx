@@ -1,92 +1,59 @@
-import React from "react";
-import Resume from "./TriTran-2.5YoE-FullStack.pdf";
-import NavItem from "./NavItem";
-import { Flex, Link } from "@chakra-ui/react";
+import React, { useState, useEffect } from "react";
+import { Flex } from "@chakra-ui/react";
+import RightNav from "./Navbar";
+import { getWindowDimensions } from "utils";
 
-const RightNav = () => {
+const Navbar = () => {
+  // --> Scroll up to show navbar START //
+  const [currentScreenWidth, setCurrentScreenWidth] = useState(
+    getWindowDimensions()
+  );
+  const [prevScrollPosition, setPrevScrollPosition] = useState(
+    window.pageYOffset
+  );
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    function handleResize() {
+      setCurrentScreenWidth(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [window.pageYOffset]);
+
+  const handleScroll = () => {
+    const currentScrollPosition = window.pageYOffset;
+    const Newvisibility = currentScrollPosition < prevScrollPosition;
+    setPrevScrollPosition(currentScrollPosition);
+    setVisible(Newvisibility);
+  };
+  // --> Scroll up to show navbar END //
+
   return (
-    <Flex flexGrow={1} alignContent={"center"} justifyContent={"center"}>
-      <NavItem
-        activeClass="active"
-        text="Journey"
-        link="Journey"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-      />
-      <NavItem
-        activeClass="active"
-        text="Projects"
-        link="Projects"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-      />
-
-      <NavItem
-        activeClass="active"
-        text="About Me"
-        link="Aboutme"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-      />
-      <NavItem
-        activeClass="active"
-        text="Blogs"
-        link="Blogs"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={500}
-      />
-      <Link
-        href={Resume}
-        target="_blank"
-        position={"relative"}
-        ml="2rem"
-        p={"1.25rem 0rem 0.75rem 0rem"}
-        color="white"
-        cursor="pointer"
-        fontSize={"1.5rem"}
-        fontFamily={"Nunito Sans"}
-        letterSpacing={"2px"}
-        textTransform={"uppercase"}
-        textDecor={"none"}
-        bgImage={"linear-gradient(white, white)"}
-        bgSize={"0 2px, auto"}
-        bgRepeat={"no-repeat"}
-        bgPos={"center bottom"}
-        transition={"all 0.2s ease-out"}
-        _hover={{
-          backgroundSize: "100% 2px, auto",
-        }}
-        sx={{
-          "@media (max-width: 870px)": {
-            p: "0.5rem",
-            mr: 0,
-            ml: "0.5rem",
-            fontSize: "0.5rem",
-            textAlign: "center",
-          },
-          "@media (min-width: 870px)": {
-            fontSize: "1rem",
-          },
-          "@media (min-width: 1200px)": {
-            fontSize: "1.5rem",
-          },
-          "@media (min-width: 1600px)": {
-            fontSize: "2rem",
-          },
-        }}
-      >
-        Resume
-      </Link>
+    <Flex
+      w="100%"
+      h="10%"
+      justifyContent={"center"}
+      alignItems={"center"}
+      position={"fixed"}
+      left={0}
+      right={0}
+      top={visible ? 0 : "-10%"}
+      transition={"top 0.6s"}
+      zIndex={999}
+    >
+      <RightNav />
     </Flex>
   );
 };
 
-export default RightNav;
+export default Navbar;

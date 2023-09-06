@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ProjectCard from "components/Project/ProjectCard";
+import ProjectCard from "components/Project/ProjectCard/ProjectCard";
 import ProjectExplain from "components/Project/ProjectExplain";
 import ProjectDescription from "./ProjectDescription";
-import ProjectImage from "./ProjectImage";
-import ProjectTachStack from "./ProjectTechStack";
+import ProjectImage from "./ProjectImage/ProjectImage";
+import ProjectTachStack from "./ProjectTechStack/ProjectTechStack";
 import {
   ProjectName,
   ProjectCredential,
@@ -11,7 +11,7 @@ import {
   ButtonContainer,
 } from "./Project Utilities";
 import TabBar from "./TabBar";
-import ProjectButton from "components/Project/ProjectButton";
+import ProjectButton from "components/Project/ProjectButton/ProjectButton";
 
 const ProjectLeft = ({
   name,

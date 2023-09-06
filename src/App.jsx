@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Box, useMediaQuery } from "@chakra-ui/react";
 import Home from "./components/Home";
 import Timeline from "./components/Journey";
-import Projects from "./components/Project/ProjectSection";
-import AboutMe from "./components/Aboutme";
-import Blog from "./components/Blogs";
+import Projects from "./components/Project/Projects";
+import AboutMe from "./components/AboutMe";
+import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import LoaderScreen from "./components/LoaderScreen";
 
 const App = () => {
@@ -38,7 +38,7 @@ const App = () => {
           <Timeline />
           <Projects />
           <AboutMe />
-          <Blog />
+          <Blogs />
           <Footer />
         </Box>
       )}
