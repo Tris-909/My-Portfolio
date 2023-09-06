@@ -4,7 +4,7 @@ import LoaderScreen from "./components/LoaderScreen";
 import Home from "./components/Home";
 import Timeline from "./components/Journey";
 import Projects from "./components/Project/ProjectSection";
-import Aboutme from "./components/Aboutme";
+import AboutMe from "./components/Aboutme";
 import Blog from "./components/Blogs";
 import Footer from "./components/Footer";
 
@@ -39,7 +39,7 @@ const App = () => {
           <Home />
           <Timeline />
           <Projects />
-          <Aboutme />
+          <AboutMe />
           <Blog />
           <Footer />
         </Box>
