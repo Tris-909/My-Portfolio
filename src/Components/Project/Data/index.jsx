@@ -1,8 +1,8 @@
-import SavingApp1 from "assets/SavingApp/pic1.png";
-import SavingApp2 from "assets/SavingApp/pic2.png";
-import SavingApp3 from "assets/SavingApp/pic3.png";
-import SavingApp4 from "assets/SavingApp/pic4.png";
-import SavingApp5 from "assets/SavingApp/pic5.png";
+import SavingApp1 from "../../../assets/SavingApp/pic1.png";
+import SavingApp2 from "../../../assets/SavingApp/pic2.png";
+import SavingApp3 from "../../../assets/SavingApp/pic3.png";
+import SavingApp4 from "../../../assets/SavingApp/pic4.png";
+import SavingApp5 from "../../../assets/SavingApp/pic5.png";
 
 const APP_DATA = {
   SAVING_APP: {

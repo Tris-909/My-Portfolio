@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
-import { ReactComponent as LoadingScreen } from "assets/Home_Loader/Eclipse-0.6s-201px.svg";
+import { ReactComponent as LoadingScreen } from "../../assets/Home_Loader/Eclipse-0.6s-201px.svg";
 
 const LoaderScreen = () => {
   return (
