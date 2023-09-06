@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Box, useMediaQuery } from "@chakra-ui/react";
-import LoaderScreen from "./components/LoaderScreen";
 import Home from "./components/Home";
 import Timeline from "./components/Journey";
 import Projects from "./components/Project/ProjectSection";
@@ -8,6 +7,7 @@ import AboutMe from "./components/Aboutme";
 import Blog from "./components/Blogs";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import LoaderScreen from "./components/LoaderScreen";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
