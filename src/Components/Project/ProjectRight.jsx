@@ -4,10 +4,12 @@ import ProjectImage from "components/Project/ProjectImage";
 import ProjectTachStack from "components/Project/ProjectTechStack";
 import ProjectDescription from "components/Project/ProjectDescription";
 import ProjectExplain from "components/Project/ProjectExplain";
-import ProjectName from "components/Project/Project Utilities/ProjectName";
-import ProjectCredential from "components/Project/Project Utilities/ProjectCredential";
-import ProjectContainer from "components/Project/Project Utilities/ProjectContainer";
-import ButtonContainer from "components/Project/Project Utilities/ButtonContainer";
+import {
+  ProjectName,
+  ProjectCredential,
+  ProjectContainer,
+  ButtonContainer,
+} from "./Project Utilities";
 import TabBar from "components/Project/TabBar";
 import ProjectButton from "components/Project/ProjectButton";
 

@@ -7,8 +7,6 @@ import Projects from "./components/Project/ProjectSection";
 import AboutMe from "./components/Aboutme";
 import Blog from "./components/Blogs";
 import Footer from "./components/Footer";
-
-// Waiting to turn into chakraUI
 import Navbar from "./components/Navbar";
 
 const App = () => {
