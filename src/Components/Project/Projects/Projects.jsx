@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectRight from "components/Project/ProjectRight";
-import APP_DATA from "components/Project/Data";
+import ProjectRight from "../ProjectRight";
+import APP_DATA from "../Data/index";
 import { Box, useMediaQuery } from "@chakra-ui/react";
 
 const Projects = () => {

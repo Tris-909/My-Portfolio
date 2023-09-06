@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Flex } from "@chakra-ui/react";
-import RightNav from "./Navbar";
-import { getWindowDimensions } from "utils";
+import RightNav from "./RightNav";
+import { getWindowDimensions } from "../../utils/index";
 
 const Navbar = () => {
   // --> Scroll up to show navbar START //

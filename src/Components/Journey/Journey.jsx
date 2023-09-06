@@ -5,7 +5,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { getWindowDimensions } from "utils";
+import { getWindowDimensions } from "../../utils/index";
 import "react-vertical-timeline-component/style.min.css";
 import "./Journey.css";
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Box, Text } from "@chakra-ui/react";
 import LinkButton from "./LinkButton";
-import { getWindowDimensions } from "utils";
+import { getWindowDimensions } from "../../utils/index";
 import Fade from "react-reveal/Fade";
 import "assets/Home_BackGround_Effect/backGroundEffect.css";
 
