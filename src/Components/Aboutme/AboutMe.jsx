@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Link } from "@chakra-ui/react";
-import Fade from "react-reveal/Fade";
 
 const TextContainer = ({ children }) => {
   return (
@@ -63,50 +62,48 @@ const AboutMeTab = () => {
 
 const AboutMe = () => {
   return (
-    <Fade left>
+    <Box
+      id="Aboutme"
+      w="90%"
+      margin={"7% 5% 5% 5%"}
+      borderRadius={"10px"}
+      zIndex={1}
+      padding={"20px 0px"}
+      position="relative"
+      backgroundColor="#f7faff"
+      display={"flex"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      fontFamily={"Nunito Sans"}
+      sx={{
+        "@media (max-width: 870px)": {
+          margin: "11% 5% 5% 5%",
+        },
+      }}
+    >
       <Box
-        id="Aboutme"
-        w="90%"
-        margin={"7% 5% 5% 5%"}
-        borderRadius={"10px"}
-        zIndex={1}
-        padding={"20px 0px"}
-        position="relative"
-        backgroundColor="#f7faff"
+        position={"absolute"}
+        top="-50px"
+        left="0%"
+        background="transparent"
         display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        fontFamily={"Nunito Sans"}
-        sx={{
-          "@media (max-width: 870px)": {
-            margin: "11% 5% 5% 5%",
-          },
-        }}
+        flexDir={"row"}
+        columnGap={"0.5rem"}
       >
         <Box
-          position={"absolute"}
-          top="-50px"
           left="0%"
-          background="transparent"
-          display={"flex"}
-          flexDir={"row"}
-          columnGap={"0.5rem"}
+          backgroundColor="#f7faff"
+          fontSize={"25px"}
+          fontWeight={800}
+          padding="15px"
+          borderRadius={"5px"}
+          cursor={"pointer"}
         >
-          <Box
-            left="0%"
-            backgroundColor="#f7faff"
-            fontSize={"25px"}
-            fontWeight={800}
-            padding="15px"
-            borderRadius={"5px"}
-            cursor={"pointer"}
-          >
-            About Me
-          </Box>
+          About Me
         </Box>
-        <AboutMeTab />
       </Box>
-    </Fade>
+      <AboutMeTab />
+    </Box>
   );
 };
 

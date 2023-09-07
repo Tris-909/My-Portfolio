@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Box, Text } from "@chakra-ui/react";
 import LinkButton from "./LinkButton";
 import { getWindowDimensions } from "../../utils/index";
-import Fade from "react-reveal/Fade";
 import "../../assets/Home_BackGround_Effect/backGroundEffect.css";
 
 const Home = () => {
@@ -52,42 +51,40 @@ const Home = () => {
           },
         }}
       >
-        <Fade left cascade>
-          <Text
-            fontSize="6em"
-            color="white"
-            fontFamily="Nunito Sans"
-            letterSpacing="5px"
-            transitionDuration={"1s"}
-            sx={{
-              "@media (max-width: 870px)": {
-                fontSize: "17vw",
-                letterSpacing: "5px",
-                marginLeft: "10%",
+        <Text
+          fontSize="6em"
+          color="white"
+          fontFamily="Nunito Sans"
+          letterSpacing="5px"
+          transitionDuration={"1s"}
+          sx={{
+            "@media (max-width: 870px)": {
+              fontSize: "17vw",
+              letterSpacing: "5px",
+              marginLeft: "10%",
 
-                "& span": {
-                  display: "block",
-                },
+              "& span": {
+                display: "block",
               },
-            }}
-          >
-            Tri Tran
-          </Text>
-          <Text
-            color="white"
-            fontSize="4em"
-            fontFamily={"Nunito Sans"}
-            transitionDuration={"1s"}
-            sx={{
-              "@media (max-width: 870px)": {
-                fontSize: "9vw",
-                marginLeft: "10%",
-              },
-            }}
-          >
-            FullStack Developer
-          </Text>
-        </Fade>
+            },
+          }}
+        >
+          Tri Tran
+        </Text>
+        <Text
+          color="white"
+          fontSize="4em"
+          fontFamily={"Nunito Sans"}
+          transitionDuration={"1s"}
+          sx={{
+            "@media (max-width: 870px)": {
+              fontSize: "9vw",
+              marginLeft: "10%",
+            },
+          }}
+        >
+          FullStack Developer
+        </Text>
         <Box
           display={"flex"}
           flexDirection={"row"}
