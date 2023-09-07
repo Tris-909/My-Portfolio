@@ -3,7 +3,7 @@ import { Box, useMediaQuery } from "@chakra-ui/react";
 import Home from "./components/Home/index";
 import Timeline from "./components/Journey/index";
 import Projects from "./components/Project/Projects/index";
-import AboutMe from "./components/AboutMe/index";
+import AboutMe from "./components/Aboutme/index";
 import Blogs from "./components/Blogs/index";
 import Footer from "./components/Footer/index";
 import Navbar from "./components/Navbar/index";
