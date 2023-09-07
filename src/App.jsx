@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Box, useMediaQuery } from "@chakra-ui/react";
-import Home from "./components/Home/index";
-import Timeline from "./components/Journey/index";
-import Projects from "./components/Project/Projects/index";
-import AboutMe from "./components/Aboutme/index";
-import Blogs from "./components/Blogs/index";
-import Footer from "./components/Footer/index";
-import Navbar from "./components/Navbar/index";
-import LoaderScreen from "./components/LoaderScreen/index";
+import Home from "./Components/Home/index";
+import Timeline from "./Components/Journey/index";
+import Projects from "./Components/Project/Projects/index";
+import AboutMe from "./Components/Aboutme/index";
+import Blogs from "./Components/Blogs/index";
+import Footer from "./Components/Footer/index";
+import Navbar from "./Components/Navbar/index";
+import LoaderScreen from "./Components/LoaderScreen/index";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
